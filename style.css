@@ -67,6 +67,7 @@ body {
   flex-direction: column;
   font-family: Digital-7 Mono;
   background-color: #000;
+  transition: 0.95s ease-in;
 }
 
 #wish {
