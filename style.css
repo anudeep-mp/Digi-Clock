@@ -27,7 +27,12 @@ body {
   background: linear-gradient(to bottom, #3729b9, #302c50);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  cursor: pointer;
+}
+
+.text_color:hover {
+  background: linear-gradient(to bottom, #6355e0, #585285);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 .time_wrapper {
   position: relative;
