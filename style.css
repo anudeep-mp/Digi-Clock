@@ -6,8 +6,8 @@
 .spinner {
   width: 40px;
   height: 40px;
-  background-color: #333;
-
+  background: linear-gradient(to top right, #1900ff, #ffffffa9);
+  transition: 0.75s ease-in;
   position: absolute;
   top: 48%;
   left: 48%;
@@ -91,13 +91,19 @@ body {
 }
 #time {
   /* text-shadow: 0 0 55px #2980b9; */
-  font-size: 4.5rem;
+  font-size: 5rem;
 }
 #med {
   position: absolute;
+  font-size: 25px;
   top: 10px;
   right: 0;
 }
+
+#sec {
+  font-size: 25px;
+}
+
 .day_wrapper {
   display: flex;
   justify-content: space-between;
