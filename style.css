@@ -1,0 +1,55 @@
+@font-face {
+  font-family: Digital-7 Mono;
+  src: url(digital-7__mono_.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  font-family: Digital-7 Mono;
+  background-color: #000;
+}
+
+#wish {
+  font-size: 50px;
+  text-align: center;
+}
+
+.text_color {
+  background: linear-gradient(to bottom, #3729b9, #302c50);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.time_wrapper {
+  position: relative;
+}
+#time {
+  /* text-shadow: 0 0 55px #2980b9; */
+  font-size: 4.5rem;
+}
+#med {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+.day_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.day_wrapper span {
+  font-size: 1rem;
+  opacity: 0.6;
+  font-weight: 600;
+}
+#full_date {
+  font-size: 1.9rem;
+  display: flex;
+  justify-content: center;
+}
