@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Digi Clock</title>
+    <title>P100-Digi Clock</title>
 
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   </head>
 
   <body>
+    <div class="spinner-wrapper">
+      <div class="spinner"></div>
+    </div>
     <span class="text_color" id="wish">HI</span>
     <div class="wrapper">
       <div class="time_wrapper">
@@ -32,5 +35,20 @@
       <span class="text_color" id="full_date"></span>
     </div>
     <script src="script.js"></script>
+    
+    <script>
+    $(document).ready(function () {
+      //Preloader
+      $(window).on("load", function () {
+        preloaderFadeOutTime = 500;
+        function hidePreloader() {
+          var preloader = $(".spinner-wrapper");
+          preloader.fadeOut(preloaderFadeOutTime);
+        }
+        hidePreloader();
+      });
+    });
+  </script>
   </body>
+  
 </html>
