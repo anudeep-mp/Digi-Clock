@@ -43,12 +43,12 @@ function currentTime() {
   var half = hour == "AM" ? "FH" : "SH";
   var wishing = "MORNING";
 
-  if (half == "FH") {
+  if (hour == "AM") {
     if (hour < 4) wishing = "NIGHT";
     else wishing = "MORNING";
   }
 
-  if (half == "SH") {
+  else (hour == "PM") {
     if (hour < 4) wishing = "AFTERNOON";
     else wishing = "EVENING";
   }
