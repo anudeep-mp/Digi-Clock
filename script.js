@@ -40,15 +40,15 @@ function currentTime() {
   ).innerHTML = `${month_name[month]}${curr_date} ${year}`;
   showDay[day].style.opacity = "1";
 
-  var half = hour == "AM" ? "FH" : "SH";
+  var half = hour === "AM" ? "FH" : "SH";
   var wishing = "MORNING";
 
-  if (hour == "AM") {
+  if (half === "FH") {
     if (hour < 4) wishing = "NIGHT";
     else wishing = "MORNING";
   }
 
-  else (hour == "PM") {
+  if (half === "SH") {
     if (hour < 4) wishing = "AFTERNOON";
     else wishing = "EVENING";
   }
@@ -62,4 +62,5 @@ function updateTime(k) {
     return k;
   }
 }
+
 setInterval(currentTime, 1000);
