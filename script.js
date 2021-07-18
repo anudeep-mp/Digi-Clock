@@ -27,18 +27,6 @@ function currentTime() {
   var midday = "AM";
   midday = hour >= 12 ? "PM" : "AM";
 
-  var wishing = "MORNING";
-
-  if (midday === "AM") {
-    if (hour < 4 || hour == 12) wishing = "NIGHT";
-    else wishing = "MORNING";
-  } else {
-    if (hour < 4 || hour == 12) wishing = "AFTERNOON";
-    else wishing = "EVENING";
-  }
-
-  document.querySelector("#wish").innerHTML = `GOOD ${wishing} ANUDEEP`;
-
   hour = hour == 0 ? 12 : hour > 12 ? hour - 12 : hour;
   hour = updateTime(hour);
   min = updateTime(min);
@@ -51,6 +39,18 @@ function currentTime() {
     "#full_date"
   ).innerHTML = `${month_name[month]}${curr_date} ${year}`;
   showDay[day].style.opacity = "1";
+  
+  var wishing = "MORNING";
+
+  if (midday === "AM") {
+    if (hour < 4 || hour == 12) wishing = "NIGHT";
+    else wishing = "MORNING";
+  } else {
+    if (hour < 4 || hour == 12) wishing = "AFTERNOON";
+    else wishing = "EVENING";
+  }
+
+  document.querySelector("#wish").innerHTML = `GOOD ${wishing} ANUDEEP`;
 }
 function updateTime(k) {
   if (k < 10) {
