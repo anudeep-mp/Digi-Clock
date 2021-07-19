@@ -78,11 +78,6 @@ body {
   text-align: center;
 }
 
-.iconimage {
-  width: 135px;
-  height: 155px;
-  -webkit-user-drag: none;
-}
 .text_color {
   background: linear-gradient(to bottom, #3729b9, #302c50);
   -webkit-text-fill-color: transparent;
