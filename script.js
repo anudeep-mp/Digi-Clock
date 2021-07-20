@@ -37,7 +37,7 @@ function currentTime() {
   document.querySelector("#med").innerHTML = `${midday}`;
   document.querySelector(
     "#full_date"
-  ).innerHTML = `${month_name[month]}${curr_date} ${year}`;
+  ).innerHTML = `${month_name[month]} ${curr_date} ${year}`;
   showDay[day].style.opacity = "1";
   
   var wishing = "MORNING";
