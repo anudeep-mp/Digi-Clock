@@ -55,6 +55,7 @@
 * {
   padding: 0;
   box-sizing: border-box;
+  user-select: none;
 }
 
 body {
@@ -73,7 +74,6 @@ body {
 #wish {
   font-size: 50px;
   text-align: center;
-user-select: none;
 }
 
 .text_color {
@@ -89,7 +89,6 @@ user-select: none;
 }
 .time_wrapper {
   position: relative;
-user-select: none;
 }
 #time {
   /* text-shadow: 0 0 55px #2980b9; */
@@ -109,7 +108,6 @@ user-select: none;
 .day_wrapper {
   display: flex;
   justify-content: space-between;
-user-select: none;
 }
 .day_wrapper span {
   font-size: 1rem;
@@ -121,5 +119,4 @@ user-select: none;
   display: flex;
   justify-content: center;
   font-weight: 600;
-user-select: none;
 }
