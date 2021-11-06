@@ -4,10 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#9d4edd" />
 
-    <title>Digi Clock</title>
-
+    <title id="page-title">Have a great day!</title>
+    <style type="text/css" media="screen, print">
+      @font-face {
+        font-family: Digital-7 Mono;
+        src: url(digital-7__mono_.ttf);
+      }
+      body {
+        font-family: Digital-7 Mono, serif;
+      }
+    </style>
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   </head>
@@ -22,8 +29,8 @@
       class="iconimage"
       style="
         background-image: url(CB-Logo.png);
-        width: 130px;
-        height: 130px;
+        width: 100px;
+        height: 100px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -57,8 +64,8 @@
     ></script>
     <script type="text/javascript">
       $(document).ready(function () {
-        $(".spinner-wrapper").fadeOut(4000);
-      });
+        $('.spinner-wrapper').fadeOut(4000)
+      })
     </script>
   </body>
 </html>
